@@ -53,7 +53,9 @@ def Decrypt():
             Introduction()
             Choice()
         else:
-            exit()
+            print()
+            print()
+            return "Thank You. See you soon, Bye Bye"
 def Introduction():
     print()
     print("This is an app to encrypt and decrypt your messages to keep it safe. ")
@@ -71,6 +73,12 @@ def Choice():
         Encrypt()
     if choice == "2":
         Decrypt()
+    if choice == "exit":
+        return "Thank You. See you soon, Bye Bye"
+    else:
+        print()
+        print("Invalid Input")
+        Choice()
 
 Introduction()
 Choice()
